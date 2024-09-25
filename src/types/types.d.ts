@@ -1,6 +1,19 @@
-interface User { }
+interface User {
+    id: number,
+    username: string
+    email: string
+    password: string
+    phone?: number
 
-interface Profile { }
+    shop: Shop
+    profile: Profile
+}
+
+interface Profile {
+    userId: number
+}
+
+interface Shop { }
 
 interface Item { }
 
